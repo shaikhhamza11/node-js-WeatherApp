@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const app = express();
 const geoCode = require('./util/geoCode');
 const forecast = require('./util/forecast');
+const port = process.env.PORT || 3000;
 // console.log(__dirname);
 const name = "Hamza Shaikh"
 //Define path for express config
@@ -104,11 +105,11 @@ app.get('/*', (req, res) => {
 // })
 
 
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
     if (err) {
         console.log(err);
 
     }
-    console.log("Server is Running at port 3000");
+    console.log("Server is Running at port " + port);
 
 })
