@@ -20,26 +20,26 @@ hbs.registerPartials(partialsDirectory)
 //setup routing
 app.get("", (req, res) => {
     res.render('index', {
-        title: "Weather APP",
+        title: "Weather ",
         name
     });
 })
 app.get("/about", (req, res) => {
     res.render('about', {
-        title: "Weather APP",
+        title: "Weather ",
         name
     });
 })
 app.get("/help", (req, res,) => {
     res.render('help', {
-        title: "Weather APP ",
+        title: "Weather ",
         name
     });
 })
 app.get('/help/*', (req, res) => {
     res.render('404error', {
         name,
-        errMsg: "help not found"
+        errMsg: "Help not found"
     })
 })
 app.get("/weather", (req, res) => {
