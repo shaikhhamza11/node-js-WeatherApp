@@ -31,7 +31,7 @@ weatherForm.addEventListener('submit', (e) => {
             <p class="design">City:${data[0].city}</p>
             <p class="design">Country:${data[0].country}</p>
 
-            <p class="design">It is ${data[0].foreCastd}.The Temperature is   ${data[0].Temperature}. The pressure is  ${data[0].pressure}</p>
+            <p class="design">It is ${data[0].foreCastd}.The Temperature is   ${data[0].Temperature}&#8451; . The pressure is  ${data[0].pressure}</p>
             `;
                 div.innerHTML = output;
             }
